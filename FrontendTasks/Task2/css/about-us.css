@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: black;
+}
+
+:root {
+  --border-bottom: 2px solid gray;
+  --big-fonts: rgba(84, 143, 215, 0.885);
+  --main-width: 910px;
+}
+
+/* HEAD */
+
+.head {
+  width: var(--main-width);
+  height: 116px;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom: var(--border-bottom);
+}
+
+.head > .links {
+  width: 178px;
+  height: 32px;
+  float: right;
+  margin-right: 8px;
+  margin-top: 2%;
+}
+
+/* NAVBAR */
+
+.navbar {
+  width: var(--main-width);
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+  padding-bottom: 7px;
+  padding-left: 15px;
+  border-bottom: 2px solid black;
+}
+
+.navbar > a {
+  text-decoration: none;
+  margin-right: 10px;
+  color: gray;
+  text-transform: uppercase;
+}
+
+.navbar > a:hover {
+  background-color: var(--big-fonts);
+  padding: 10px;
+  color: white;
+}
+
+/* PARENT */
+
+.parent {
+  background-color: #ddd;
+  width: var(--main-width);
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+}
+
+/* BANNER2 */
+
+.banner2 > img {
+  width: 100%;
+}
+
+/* CONTENT */
+
+.h2 {
+  width: 100%;
+  margin-top: 10px;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  border-bottom: var(--border-bottom);
+  color: var(--big-fonts);
+  text-transform: uppercase;
+}
+
+div.p1 {
+  width: 100%;
+  margin-top: 10px;
+  padding-top: 10px;
+  padding-left: 10px;
+  border-bottom: var(--border-bottom);
+  font-size: larger;
+  border: none;
+  text-align: justify;
+  padding-right: 10px;
+}
+
+.mod12 {
+  margin-top: 30px;
+}
+.mod1 {
+  float: right;
+  padding-right: 100px;
+}
+.mod2 {
+  float: left;
+  padding-left: 80px;
+}
+.clear {
+  clear: both;
+}
+
+.mod34 {
+  margin-top: 30px;
+}
+.mod3 {
+  float: right;
+  padding-right: 100px;
+}
+.mod4 {
+  float: left;
+  padding-left: 80px;
+}
+
+.p2 {
+  width: 100%;
+  margin-top: 10px;
+  padding-top: 80px;
+  padding-left: 10px;
+  padding-bottom: 40px;
+  border-bottom: var(--border-bottom);
+  font-size: large;
+  text-align: justify;
+  padding-right: 10px;
+}
+
+.footer {
+  width: 100%;
+  padding: 10px;
+  height: 50px;
+  margin-top: 20px;
+  text-align: center;
+}
