@@ -1,0 +1,768 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+  --primaryColor: #ffc603;
+  --blackColor: #000;
+  --whiteColor: #fff;
+}
+
+.container {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.btn {
+  text-transform: capitalize;
+  background-color: var(--whiteColor);
+  text-decoration: none;
+  font-size: 0.8rem;
+  color: var(--blackColor);
+  padding: 10px 25px;
+  border-radius: 25px;
+}
+
+.txtP {
+  color: var(--whiteColor);
+  font-size: 0.9rem;
+  text-align: justify;
+  word-spacing: -1px;
+}
+
+body > header {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 20px;
+  background-color: var(--blackColor);
+  padding: 5px 0;
+}
+body > header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+body > header h3 {
+  color: var(--primaryColor);
+  font-variant: small-caps;
+  font-weight: 400;
+  font-style: 1.1rem;
+  font-style: italic;
+  display: flex;
+  align-items: center;
+}
+body > header img {
+  height: 30px;
+  margin-right: 15px;
+}
+body > header nav {
+  display: none;
+  align-items: center;
+}
+body > header nav a {
+  color: var(--whiteColor);
+  text-decoration: none;
+  font-size: 0.9rem;
+  text-transform: capitalize;
+}
+body > header nav > a {
+  padding: 0 15px;
+}
+body > header nav div {
+  display: flex;
+}
+body > header nav div a {
+  border-radius: 50%;
+  border: thin solid var(--whiteColor);
+  height: 35px;
+  width: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 5px;
+}
+
+body > header nav + i {
+  color: var(--primaryColor);
+  font-size: 25px;
+}
+
+/* ============= sec-1 ============= */
+
+#sec-1 {
+  padding: 60px 0 0;
+  background: url("/images/banner.jpg") no-repeat center center/cover;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+#sec-1 .container {
+  padding-bottom: 50px;
+}
+
+#sec-1 h5 {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+#sec-1 h2 {
+  font-size: 2.5rem;
+  text-transform: capitalize;
+  color: var(--blackColor);
+}
+
+#sec-1 h2 + h2 {
+  color: #cd8383;
+  padding-bottom: 50px;
+}
+
+/* =============== sec-2 ===================== */
+#sec-2 {
+  background-color: var(--blackColor);
+}
+
+#sec-2 .container {
+  padding: 15px 35px;
+}
+
+#sec-2 div h2 {
+  color: var(--primaryColor);
+  font-weight: 400;
+  font-size: 1.3rem;
+  padding-bottom: 15px;
+}
+
+/* ============= sec-3 ================= */
+#sec-3 {
+  background-color: var(--primaryColor);
+}
+
+#sec-3 h2 {
+  color: var(--whiteColor);
+  font-weight: bolder;
+  text-align: center;
+  padding: 30px;
+  text-transform: capitalize;
+}
+
+/* ================== sec-4 ================== */
+
+#sec-4 {
+  padding: 30px 0;
+}
+#sec-4 h2 {
+  text-transform: capitalize;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: var(--blackColor);
+  margin-bottom: 18px;
+  padding-top: 15px;
+}
+
+#sec-4 figure {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+#sec-4 figure figcaption {
+  background-color: var(--blackColor);
+  padding: 15px;
+}
+
+#sec-4 figure figcaption h3 {
+  color: var(--primaryColor);
+  margin-bottom: 16px;
+  font-size: 1.2rem;
+}
+
+#sec-4 figure img {
+  max-width: 100%;
+  display: block;
+}
+
+#sec-4 figure figcaption span {
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: var(--whiteColor);
+  font-size: 0.9rem;
+  display: inline-block;
+  padding: 5px 8px;
+  border-radius: 5px;
+}
+
+/* ================== sec-5 ================== */
+#sec-5 {
+  background-color: var(--blackColor);
+}
+#sec-5 .container {
+  padding: 15px 20px;
+}
+
+#sec-5 h2 {
+  color: var(--primaryColor);
+  text-align: center;
+  text-transform: capitalize;
+  padding-bottom: 15px;
+}
+
+#sec-5 div a img {
+  max-width: 100%;
+}
+
+/* ================== sec-6 ================== */
+#sec-6 {
+  background-color: #ffc603;
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+}
+#sec-6 .container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#sec-6 p {
+  font-size: 0.8rem;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+#sec-6 h2 {
+  font-size: 1.2rem;
+  color: var(--whiteColor);
+}
+
+#sec-6 a {
+  display: flex;
+  align-items: center;
+  margin: 20px -40px 30px;
+  margin-left: 10px;
+}
+
+/* ================ sec-7 =================== */
+#sec-7 {
+  background-color: var(--blackColor);
+  padding: 20px 35px;
+}
+#sec-7 * {
+  color: var(--whiteColor);
+}
+#sec-7 header h2 {
+  font-weight: lighter;
+  margin-bottom: 25px;
+  text-transform: capitalize;
+}
+#sec-7 header p {
+  text-align: justify;
+  padding-bottom: 25px;
+}
+
+#sec-7 figure img {
+  max-width: 100%;
+  margin-bottom: 15px;
+}
+
+#sec-7 figcaption {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#sec-7 figcaption article {
+  width: 50%;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#sec-7 figcaption article h2 {
+  font-weight: 500;
+  font-size: 1.8rem;
+  padding-bottom: 10px;
+}
+#sec-7 figcaption article p {
+  text-align: center;
+}
+
+/* ================ sec-8 ================== */
+#sec-8 {
+  background: rgba(61, 87, 93, 0.9) url("/images/contactus.jpg") no-repeat
+    center center/cover;
+  background-blend-mode: overlay;
+  max-width: 100%;
+}
+
+#sec-8 .container {
+  padding: 30px 25px;
+}
+#sec-8 article {
+  padding-bottom: 40px;
+}
+#sec-8 article h2 {
+  color: var(--primaryColor);
+  padding-bottom: 10px;
+}
+
+.form-container {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: rgb(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 30px rgba(253, 199, 5);
+  width: 80%;
+  margin: 0 auto;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  padding: 12px;
+  margin-bottom: 16px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  outline: none;
+}
+
+button {
+  padding: 10px;
+  background-color: transparent;
+  color: #333;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-transform: uppercase;
+}
+
+button:hover {
+  background-color: var(--primaryColor);
+  color: var(--blackColor);
+}
+
+/* =========== footer ========== */
+
+footer {
+  background-color: #222;
+}
+
+footer .container {
+  padding: 40px 20px;
+}
+
+footer ul * {
+  text-decoration: none;
+  list-style-type: none;
+  color: var(--whiteColor);
+}
+
+footer div > ul:first-of-type {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 25px;
+  text-transform: capitalize;
+}
+
+footer div > ul:first-of-type li {
+  width: 35%;
+}
+
+footer div > ul:nth-of-type(2) li {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 25px;
+}
+
+footer div > ul:last-child li:first-child ul {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+footer div > ul:last-child *:not(input) {
+  text-align: center;
+}
+footer input {
+  background-color: transparent;
+  width: 70%;
+  border: none;
+  border-bottom: 3px solid var(--whiteColor);
+  padding: 8px 0px;
+  border-radius: 0;
+}
+
+footer input::placeholder {
+  color: var(--whiteColor);
+  text-align: start;
+}
+
+footer div > ul:last-child > li:last-child {
+  margin-top: 20px;
+}
+footer div > ul:last-child > li:last-child a {
+  background-color: var(--whiteColor);
+  color: var(--blackColor);
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: 400;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media only screen and (min-width: 576px) {
+  .container {
+    width: 520px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .container {
+    width: 730px;
+  }
+
+  body > header nav {
+    display: flex;
+  }
+
+  body > header nav + i {
+    display: none !important;
+  }
+  /* ========== sec-2 ========== */
+  #sec-2 div h2 {
+    font-size: 1.6rem;
+  }
+  #sec-2 div p {
+    font-size: 1rem;
+  }
+  /* ============= sec-3 ================= */
+
+  #sec-3 h2 {
+    font-weight: 700;
+    font-size: 1.6rem;
+  }
+  /* ========== sec-4 ========== */
+  #sec-4 figure {
+    display: flex;
+  }
+  #sec-4 figure img {
+    width: 40%;
+  }
+  #sec-4 figure figcaption {
+    width: 60%;
+  }
+  /* ================== sec-5 ================== */
+  #sec-5 h2 {
+    font-size: 2rem;
+  }
+
+  #sec-5 div > div {
+    text-align: center;
+  }
+  #sec-5 div a {
+    width: 100%;
+  }
+  #sec-5 div a img {
+    max-width: 40%;
+  }
+  /* ================== sec-6 ================== */
+  #sec-6 {
+    padding: 20px 0;
+  }
+  #sec-6 .container {
+    justify-content: space-evenly;
+  }
+
+  #sec-6 p {
+    margin-bottom: 30px;
+    font-size: 0.9rem;
+  }
+  #sec-6 h2 {
+    font-size: 1.4rem;
+  }
+
+  #sec-6 a {
+    margin-top: 30px;
+  }
+
+  /* ============== sec-7 ============= */
+  #sec-7 figure {
+    display: flex;
+  }
+
+  #sec-7 figure img {
+    max-width: 50%;
+    margin-right: 15px;
+    display: block;
+  }
+
+  #sec-7 figcaption {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+  }
+
+  #sec-7 figcaption article {
+    width: auto;
+    text-align: start;
+    margin-bottom: auto;
+  }
+
+  #sec-7 figcaption article h2 {
+    font-weight: 500;
+    font-size: 1.8rem;
+    padding-bottom: 10px;
+  }
+
+  /* ================== sec-8 =================== */
+  .form-container {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  /* ================= footer =================== */
+
+  footer div > ul:first-of-type li {
+    margin-left: 65px;
+    width: 25%;
+  }
+
+  footer ul li input {
+    width: 45%;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .container {
+    width: 950px;
+  }
+  /* ========== sec-2 ========== */
+  #sec-2 div h2 {
+    font-size: 1.9rem;
+  }
+  #sec-2 div p {
+    font-size: 1.1rem;
+  }
+  /* ============= sec-3 ================= */
+
+  #sec-3 h2 {
+    font-weight: 800;
+    font-size: 1.8rem;
+  }
+
+  /* =========== sec-6 =========== */
+  #sec-6 p {
+    margin-bottom: 30px;
+    font-size: 0.9rem !important;
+  }
+  #sec-6 h2 {
+    font-size: 2rem !important;
+  }
+
+  /* ============ sec-7 ============== */
+
+  #sec-7 figure img {
+    max-width: 60%;
+  }
+
+  #sec-7 figcaption article h2 {
+    font-size: 3rem;
+  }
+  /* ============ sec-8 ============== */
+
+  #sec-8 .container {
+    display: flex;
+  }
+  #sec-8 article {
+    width: 50%;
+  }
+  #sec-8 .form-container {
+    width: 38%;
+  }
+
+  /* ============= footer ============= */
+  footer {
+    border-top: thick solid #ffc603;
+  }
+  footer .container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  footer div > ul:first-child li {
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+  }
+
+  footer div > ul:nth-of-type(2) li {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    margin-bottom: 25px;
+  }
+
+  footer div > ul:last-child {
+    text-align: start;
+    width: 40%;
+  }
+
+  footer div > ul:last-child li:first-child ul {
+    text-align: start;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+
+  footer div > ul:last-child li:first-child ul li {
+    width: 17%;
+  }
+
+  footer div > ul:last-child *:not(li input) {
+    text-align: start;
+  }
+
+  footer ul li input {
+    width: 100%;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .container {
+    width: 1140px;
+  }
+
+  /* ========== sec-2 ========== */
+  #sec-2 div h2 {
+    font-size: 2.2rem;
+  }
+
+  /* ============= sec-3 ================= */
+
+  #sec-3 h2 {
+    font-weight: 900;
+    font-size: 2rem;
+  }
+
+  /* ========== sec-4 ============ */
+  #sec-4 div.container:last-of-type {
+    display: flex;
+    justify-content: space-between;
+  }
+  #sec-4 figure {
+    flex-direction: column;
+    width: 32%;
+  }
+  #sec-4 figure img {
+    width: auto;
+  }
+  #sec-4 figure figcaption {
+    width: auto;
+    flex-grow: 1;
+  }
+
+  /* ================== sec-5 ================== */
+
+  #sec-5 div > div {
+    text-align: center;
+    width: 100%;
+  }
+
+  #sec-5 div a img {
+    max-width: 20%;
+    margin: 5px;
+  }
+
+  /* ============ sec-6 ============== */
+
+  #sec-6 {
+    padding: 30px 0;
+  }
+
+  #sec-6 p {
+    margin-bottom: 20px;
+  }
+  #sec-6 h2 {
+    font-size: 2.3rem !important;
+  }
+
+  #sec-6 a {
+    margin-top: 35px;
+  }
+
+  /* ============ sec-7 ============== */
+
+  #sec-7 figure figcaption {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  #sec-7 figure figcaption article {
+    width: 50%;
+  }
+
+  #sec-7 figure figcaption article p {
+    width: 50%;
+    text-align: start;
+  }
+
+  #sec-7 figure img {
+    max-width: 50%;
+  }
+
+  #sec-7 figcaption article h2 {
+    font-size: 3rem;
+  }
+
+  /* ============ sec-8 ============== */
+
+  #sec-8 {
+    padding: 80px;
+  }
+
+  #sec-8 article {
+    width: 50%;
+  }
+  #sec-8 article h2 {
+    font-size: 1.8rem;
+    padding-bottom: 30px;
+  }
+
+  #sec-8 .form-container {
+    width: 30%;
+  }
+
+  footer div > ul:last-child {
+    text-align: start;
+    width: 30%;
+  }
+
+  footer .container {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+  }
+}
